@@ -1,12 +1,12 @@
 [
-	{
+    {
         "displayName": "Safari",
         "urlSchemeHandler": "com.apple.Safari"
-	},
-	{
+    },
+    {
         "displayName": "Google Chrome",
-		"urlSchemeHandler": "com.google.Chrome"
-	},
+        "urlSchemeHandler": "com.google.Chrome"
+    },
     {
         "displayName": "Firefox",
         "urlSchemeHandler": "org.mozilla.firefox"
