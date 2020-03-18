@@ -1,8 +1,8 @@
 # DefaultBrowser
 
-Demo SwiftUI app for changing default browser on macOS.
+DefaultBrowser is a demo SwiftUI app for changing default browser on macOS.
 
-App contains incomplete list of common macOS browsers that are compared to user installed browsers.
+Note! DefaultBrowser displays installed browsers that can be found on the incomplete list of common macOS browsers (`browsers.json`).
 
 ![App](screenshots/app.png)
 
