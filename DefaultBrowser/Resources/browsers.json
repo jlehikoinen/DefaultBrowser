@@ -1,0 +1,34 @@
+[
+	{
+        "displayName": "Safari",
+        "urlSchemeHandler": "com.apple.Safari"
+	},
+	{
+        "displayName": "Google Chrome",
+		"urlSchemeHandler": "com.google.Chrome"
+	},
+    {
+        "displayName": "Firefox",
+        "urlSchemeHandler": "org.mozilla.firefox"
+    },
+    {
+        "displayName": "Microsoft Edge",
+        "urlSchemeHandler": "com.microsoft.edgemac"
+    },
+    {
+        "displayName": "Opera",
+        "urlSchemeHandler": "com.operasoftware.Opera"
+    },
+    {
+        "displayName": "Brave Browser",
+        "urlSchemeHandler": "com.brave.Browser"
+    },
+    {
+        "displayName": "Tor Browser",
+        "urlSchemeHandler": "org.torproject.torbrowser"
+    },
+    {
+        "displayName": "Vivaldi",
+        "urlSchemeHandler": "com.vivaldi.Vivaldi"
+    }
+]
