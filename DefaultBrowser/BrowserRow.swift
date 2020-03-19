@@ -16,46 +16,9 @@ struct BrowserRow: View {
     @Binding var selectedBrowserHandler: String?
     
     var body: some View {
-        HStack(spacing: 30) {
-            // Default browser style
-            if userBrowser.isDefault {
-                userBrowser.icon
-                Text(userBrowser.displayName)
-                    .fontWeight(.bold)
-                    .font(.system(.body, design: .rounded))
-                Text("⭐️")
-                Spacer()
-                VStack(alignment: .trailing) {
-                    Text("Path: \(userBrowser.path)")
-                    Text("Version: \(userBrowser.version)")
-                }
-            } else {
-                // Row selected style
-                if selectedBrowserHandler == userBrowser.urlSchemeHandler {
-                    userBrowser.icon
-                    Text(userBrowser.displayName)
-                        .fontWeight(.bold)
-                        .font(.system(.body, design: .rounded))
-                    Spacer()
-                    VStack(alignment: .trailing) {
-                        Text("Path: \(userBrowser.path)")
-                        Text("Version: \(userBrowser.version)")
-                    }
-                // Rest of the rows
-                } else {
-                    userBrowser.icon.opacity(0.5)
-                    Text(userBrowser.displayName).opacity(0.5)
-                    .font(.system(.body, design: .rounded))
-                    Spacer()
-                    VStack(alignment: .trailing) {
-                        Text("Path: \(userBrowser.path)")
-                        Text("Version: \(userBrowser.version)")
-                    }
-                    .opacity(0.5)
-                }
-            }
-        }.padding(5)
-        .frame(height: 50)
+        HStack {
+            Text(userBrowser.displayName)
+        }
     }
 }
 

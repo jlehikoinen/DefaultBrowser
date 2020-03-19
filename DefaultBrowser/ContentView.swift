@@ -22,12 +22,9 @@ struct ContentView: View {
     @EnvironmentObject var userSettings: UserSettings
     // This is for transfering selected row info to BrowserRow child view
     @State var selectedBrowserHandler: String? = nil
-    
     var body: some View {
         VStack {
             Text("Select default browser")
-                .fontWeight(.bold)
-                .font(.system(.largeTitle, design: .rounded))
             List {
                 ForEach(userSettings.userBrowsers) { item in
                     BrowserRow(userBrowser: item, selectedBrowserHandler: self.$selectedBrowserHandler)
@@ -36,16 +33,12 @@ struct ContentView: View {
                         self.userSettings.selectedHandler = item.urlSchemeHandler
                         self.selectedBrowserHandler = item.urlSchemeHandler
                     }
-                    .listRowBackground(self.userSettings.selectedHandler == item.urlSchemeHandler ? Color(red: 145 / 255, green: 190 / 255, blue: 255 / 255).opacity(0.3) : nil)
-                    }
-            }.cornerRadius(8)
-            .padding(.bottom, 10)
+                }
+            }
             Button(action: self.saveSettingsButtonClicked) {
                 Text("Save settings")
             }
-            .disabled(userSettings.selectedHandler == nil ? true : false)
         }
-        .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
     
