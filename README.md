@@ -16,5 +16,5 @@ DefaultBrowser uses Launch Services API for changing default browser and modifie
 
 ### Deprecation warnings
 
- - 'LSCopyDefaultHandlerForURLScheme' was deprecated in macOS 10.15: Use LSCopyDefaultApplicationURLForURL() instead.
- - 'LSCopyAllHandlersForURLScheme' was deprecated in macOS 10.15: Use LSCopyApplicationURLsForURL() instead.
+ - `'LSCopyDefaultHandlerForURLScheme' was deprecated in macOS 10.15: Use LSCopyDefaultApplicationURLForURL() instead.`
+ - `'LSCopyAllHandlersForURLScheme' was deprecated in macOS 10.15: Use LSCopyApplicationURLsForURL() instead.`
