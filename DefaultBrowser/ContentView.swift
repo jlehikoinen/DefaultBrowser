@@ -8,6 +8,7 @@
 
  /// MARK: TODO
 /*
+ - userSettings.setDefaultBrowserBoolValue => UserBrowser calculated property or some other solution?
  - Custom button style? Separate button style view?
  - Animations?
  - Padding on left side and bottom of list on light mode?
